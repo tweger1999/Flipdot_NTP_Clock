@@ -12,7 +12,8 @@ Flipdot clock that updates time from an NTP server
 ## Protocol
 ## Data Structure
 
-| Command | Description |
+| Header | Description |
+| Header | Description |
 | --- | --- |
 | `git status` | List all *new or modified* files |
 | `git diff` | Show file differences that **haven't been** staged |
