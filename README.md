@@ -2,9 +2,7 @@
 Flipdot clock that updates time from an NTP server
 
 # Overview
- 1	1
-2	3
-![image](https://user-images.githubusercontent.com/87651777/218245970-423d0bd4-d743-48a8-83f2-ee2f7a46ccc0.png)
+
 
 # Hardware
 
@@ -13,6 +11,11 @@ Flipdot clock that updates time from an NTP server
 # RS485
 ## Protocol
 ## Data Structure
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
 
 # ESP32
 ## Protocol
