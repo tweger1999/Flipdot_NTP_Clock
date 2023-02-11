@@ -1,18 +1,18 @@
 # Flipdot_NTP_Clock
 Flipdot clock that updates time from an NTP server
 
+# Overview
+ 1	1
+2	3
+![image](https://user-images.githubusercontent.com/87651777/218245970-423d0bd4-d743-48a8-83f2-ee2f7a46ccc0.png)
 
-# Introduction
- 
 # Hardware
-
 
 # Software
 
 # RS485
 ## Protocol
 ## Data Structure
-![image](https://user-images.githubusercontent.com/87651777/218245887-19e1e9d3-e971-4478-8185-c2bdad9949b2.png)
 
 # ESP32
 ## Protocol
