@@ -6,9 +6,8 @@ Flipdot clock that updates time from an NTP server
 
 # Hardware
 ## Flipdot Display
-![image](https://user-images.githubusercontent.com/87651777/218576100-976ad996-e4f8-4593-94e7-126b85b81538.png)
-![image](https://user-images.githubusercontent.com/87651777/218577527-7af86908-68bc-4888-8c2e-aeca37555281.png)
 
+![image](https://user-images.githubusercontent.com/87651777/218577527-7af86908-68bc-4888-8c2e-aeca37555281.png)
 
 The flipdot display used is a [Alfazeta XY5] (https://flipdots.com/en/products-services/flip-dot-boards-xy5/).
   - Pixel size: 13.5mm (0.53")
