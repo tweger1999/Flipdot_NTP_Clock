@@ -63,7 +63,7 @@ Below is an example of the flipdot output for a given byte.
 ## NTP Server
 
 # Code
-```SWIG
+```AGS Script
 /****************************************************************************    
  *    Project: Flip Dot NTP Clock                                           *
  *    Written by: Tristan Weger                                             *
