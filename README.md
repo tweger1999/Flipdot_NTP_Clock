@@ -16,6 +16,7 @@ The flipdot display used is a [Alfazeta XY5] (https://flipdots.com/en/products-s
   - Color: black (low) and white (high)
 
 ## Wifi Module
+![image](https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png).
 
 <img src="[https://your-image-url.type](https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png)" width="100" >
 
