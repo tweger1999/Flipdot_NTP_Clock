@@ -46,11 +46,17 @@ If using the esp32 module, follow these [directions](https://randomnerdtutorials
 
 
 When the board is installed, follow the picture below. Ensure the COM port matches where the devboard is plugged into the PC.
+
 ![image](https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png)
+
 # RS485
+
 ## Protocol
+
 ![image](https://user-images.githubusercontent.com/87651777/218534167-70db14a3-3a5f-4e87-92d6-594abbc55a8b.png)
+
 ## Data Frame Structure
+
 Below is an example of a data frame structure for a flip dot with ONE controller.
 | Header | Command | Address | Display Data | End |
 | :---: | :---: | :---: | :---: | :---: |
@@ -65,15 +71,13 @@ Below is an example of a data frame structure for a flip dot with TWO controller
 
 
 ### Command Byte
+
 The purpose of the command byte is to let the controller know when to refresh the display.
-
 There are multiple different commands that can be used for various displays and system requirements.
-
 Pay attention to the # of data bytes for the command.
-
 0x82 is a blank command that updates the display without a data byte number requirement.
-
 For example, a 14 by 28 pixel display with two controllers can use the 28 data byte command to update half of the display at a time or the 56 to update to entire display at once.
+
 | Command in Hex | Command in Binary | # of Data Bytes | # of Controllers | Display Size | Refresh |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 0x81 | B10000001 | 112 | One | Four 7x28 Displays | No |
@@ -84,26 +88,19 @@ For example, a 14 by 28 pixel display with two controllers can use the 28 data b
 | 0x86 | B10000110 | 56 | Two | One 14x28 Display | No |
 
 ### Address Byte
+
 The address byte correlates to the different controllers and displays.
-
 Address byte values range anywhere from 0x00 to 0xFF in hex.
-
 In order for the display to work properly the DIP switch on the back of each controller must be set in binary to match desired address.
-
 For example, if the address DIP switch from 1-6 for one display is set to 011111 and the other display to 000001, the respective addresses are 0x1F and 0x01
 
 ### Data Bytes
 
 Data is sent one byte (8 bits) at a time.
-
 Flipdot displays come in various shapes and sizes but all that I have come accross have rows that are split into groupings of 7.
-
 For example, my flipdot display is 14 by 28 pixels which is actually two displays put together (2x 7 by 28 pixels).
-
 The 7 pixels in each row are programmed by one byte. To program a 14 by 28 pixel display 56 (28*2) bytes of data are required.
-
 I find using binary numbers is best for the data programming in order to get a visual of the display while coding but hex will work as well.
-
 Since there are only 7 pixels to program but 8 bits in a byte, the most significant bit can be a 1 or a 0.
 
 Below is an example of the flipdot output for a given byte.
@@ -113,13 +110,20 @@ Below is an example of the flipdot output for a given byte.
 | NA | White | White | Black | White | White | White | Black |
 
 # ESP32
+
 ## Protocol
+
 ![image](https://user-images.githubusercontent.com/87651777/218536490-a3577ba7-e329-4bc0-a474-2a3dd682d4f8.png)
+
 ## NTP Server
+
 NTP stands for Network Time Protocol. The main purpose of NTP is to synchronize computer clock times through the network. The ESP32 wifi module is used to connect to a local network and request/receive time from the NTP.
 There are many different NTP clients that can be used, pool.ntp.org was used in this project due to it being free and reliable with ~4600 activer servers globally.
+
 ### Time Structure
+
 A time structure can be created using "struct tm" command. This structure contains the date and time broken down into integer variables.
+
 Below is a list of commands that can be used with the time structure.
 | tm Command | Type | tm Command | Type |
 | :---: | :---: | :---: | :---: |
@@ -134,6 +138,7 @@ Below is a list of commands that can be used with the time structure.
 | tm_isdst | int | Daylight Saving Time flag | NA |
 
 *Range is generally from 0-59 but can occasionally reach 61 to account for leap years.
+
 # Code
 ```C++
 /****************************************************************************    
