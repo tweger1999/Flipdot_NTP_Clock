@@ -89,6 +89,7 @@ Below is a list of commands that can be used with the time structure.
 | tm_wday | int | days since Sunday | 0-6 |
 | tm_yday | int | days since January 1 | 0-365 |
 | tm_isdst | int | Daylight Saving Time flag | NA |
+
 *Range is generally from 0-59 but can occasionally reach 61 to account for leap years.
 # Code
 ```C++
