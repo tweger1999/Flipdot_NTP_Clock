@@ -7,8 +7,10 @@ Flipdot clock that updates time from an NTP server
 # Hardware
 
 # Software
-![image](https://user-images.githubusercontent.com/87651777/218405560-de0da9b4-4ccc-462d-8644-0f4f3c7c76b5.png)
-
+Programming was done in Arduino IDE. 
+If using the esp32 module, follow the below directions to add the board to the IDE.
+https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+![image](https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png)
 # RS485
 ## Protocol
 ![image](https://user-images.githubusercontent.com/87651777/218405102-56db994a-08a6-4b6c-9b37-9336754952a3.png)
