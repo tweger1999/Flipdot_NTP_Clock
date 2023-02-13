@@ -5,7 +5,13 @@ Flipdot clock that updates time from an NTP server
 
 
 # Hardware
-
+## Flipdot Display
+## Wifi Module
+## RS485 Module
+## DC-DC Buck Converter
+## Metal Frame
+## Plexiglass Case
+## 3D Printed Body
 # Software
 Programming was done in Arduino IDE. 
 If using the esp32 module, follow the below directions to add the board to the IDE.
@@ -15,7 +21,7 @@ When the board is installed, follow the picture below. Ensure the COM port match
 ![image](https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png)
 # RS485
 ## Protocol
-![image](https://user-images.githubusercontent.com/87651777/218405102-56db994a-08a6-4b6c-9b37-9336754952a3.png)
+![image](https://user-images.githubusercontent.com/87651777/218534167-70db14a3-3a5f-4e87-92d6-594abbc55a8b.png)
 ## Data Frame Structure
 Below is an example of a data frame structure for a flip dot with ONE controller.
 | Header | Command | Address | Display Data | End |
@@ -66,6 +72,7 @@ Below is an example of the flipdot output for a given byte.
 
 # ESP32
 ## Protocol
+
 ## NTP Server
 
 # Code
