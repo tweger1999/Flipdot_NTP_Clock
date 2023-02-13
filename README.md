@@ -7,6 +7,7 @@ Flipdot clock that updates time from an NTP server
 # Hardware
 
 # Software
+![image](https://user-images.githubusercontent.com/87651777/218405560-de0da9b4-4ccc-462d-8644-0f4f3c7c76b5.png)
 
 # RS485
 ## Protocol
