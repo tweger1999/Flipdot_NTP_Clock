@@ -16,7 +16,7 @@ The flipdot display used is a [Alfazeta XY5] (https://flipdots.com/en/products-s
   - Color: black (low) and white (high)
 
 ## Wifi Module
-![image](https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png){: width="50%"}.
+![image](https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png | width = 100px).
 
 The wifi module used is a [HiLetgo ESP-WROOM-32 ESP32 ESP-32S Development Board](https://www.amazon.com/dp/B0718T232Z?cafId=3ecb205d-23d9-4d1b-826c-b3858ca9516d&cafASIN=B0718T232Z&ref_=cm_sw_r_apin_dp_NW1F46B0CCSQEMV6W3X2).
   - This development board not only connects to wifi, but replaces the need for an Arduino Uno or equivalent additional microcontroller.
