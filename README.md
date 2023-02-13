@@ -7,7 +7,11 @@ Flipdot clock that updates time from an NTP server
 # Hardware
 
 # Software
-
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
 # RS485
 ## Protocol
 ## Data Frame Structure
