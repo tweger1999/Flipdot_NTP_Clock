@@ -10,7 +10,7 @@ Flipdot clock that updates time from an NTP server
 
 # RS485
 ## Protocol
-![image](https://user-images.githubusercontent.com/87651777/218404590-176139ad-cb2e-458c-87c6-d5f6e5c057dd.png)
+![image](https://user-images.githubusercontent.com/87651777/218405102-56db994a-08a6-4b6c-9b37-9336754952a3.png)
 ## Data Frame Structure
 Below is an example of a data frame structure for a flip dot with ONE controller.
 | Header | Command | Address | Display Data | End |
