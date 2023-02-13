@@ -10,8 +10,11 @@ Flipdot clock that updates time from an NTP server
 ## RS485 Module
 ## DC-DC Buck Converter
 ## Metal Frame
+![image](https://user-images.githubusercontent.com/87651777/218560091-4e34d8b3-6e4b-4bc9-a321-cbc9b66b0b0d.png)
 ## Plexiglass Case
+![image](https://user-images.githubusercontent.com/87651777/218560548-5049d2b2-caeb-4f3b-9b05-deb55c83737f.png)
 ## 3D Printed Body
+![image](https://user-images.githubusercontent.com/87651777/218561437-c5fdc353-f502-46d5-8136-196a4b9fc1a0.png)
 # Software
 Programming was done in Arduino IDE. 
 If using the esp32 module, follow the below directions to add the board to the IDE.
@@ -74,7 +77,8 @@ Below is an example of the flipdot output for a given byte.
 ## Protocol
 ![image](https://user-images.githubusercontent.com/87651777/218536490-a3577ba7-e329-4bc0-a474-2a3dd682d4f8.png)
 ## NTP Server
-
+NTP stands for Network Time Protocol. The main purpose of NTP is to synchronize computer clock times through the network. The ESP32 wifi module is used to connect to a local network and request/receive time from the NTP.
+There are many different NTP clients that can be used, pool.ntp.org was used in this project due to it being free and reliable with ~4600 activer servers globally.
 ### Time Structure
 A time structure can be created using "struct tm" command. This structure contains the date and time broken down into integer variables.
 Below is a list of commands that can be used with the time structure.
