@@ -29,7 +29,9 @@ The RS485 converter used is a [YWBL-WH TTL to RS-485 Converter Module](https://w
   - This module allows the microcontroller to output RS485 serial communication which is input into the flipdot controllers.
 
 ## DC-DC Buck Converter
-
+<p align="center">
+  <img src=![image](https://user-images.githubusercontent.com/87651777/218564557-76189d80-43ad-4fab-b47f-9354d0ce89d9.png)/>
+</p>
 ![image](https://user-images.githubusercontent.com/87651777/218564557-76189d80-43ad-4fab-b47f-9354d0ce89d9.png).
 
 The buck converter used is a [MP1584EN DC-DC Buck Converter Adjustable Power Supply Module](https://www.amazon.com/dp/B01MQGMOKI?ref=ppx_pop_mob_ap_share)
