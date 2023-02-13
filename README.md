@@ -18,7 +18,20 @@ Flipdot clock that updates time from an NTP server
 | 1 byte | 1 byte | 1 byte | 28-112 bytes | 1 byte |
 | 0x80 | See Command | See Address | See Display Data | 0x8F |
 
-### Data
+
+### Commands
+| Command in Hex | Command in Binary | # of Data Bytes | # of Controllers | Display Size | Refresh |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 0x81 | B10000001 | 112 | One | x4 7x28 | No |
+| 0x81 | B10000010 | NA | NA | NA | Yes |
+| 0x83 | B10000011 | 28 | Two | 14x28 | Yes |
+| 0x84 | B10000100 | 28 | Two | 14x28 | No |
+| 0x85 | B10000101 | 56 | Two | 14x28 | Yes |
+| 0x86 | B10000110 | 56 | Two | 14x28 | No |
+
+### Address
+
+### Data Byte
 Data is sent one byte (8 bits) at a time.
 Flipdot displays come in various shapes and sizes but all that I have come accross have rows that are split into groupings of 7.
 For example, my flipdot display is 14 by 28 pixels which is actually two displays put together (2x 7 by 28 pixels).
