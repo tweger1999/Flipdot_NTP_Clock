@@ -11,7 +11,7 @@ Flipdot clock that updates time from an NTP server
 
 The wifi module used is a [HiLetgo ESP-WROOM-32 ESP32 ESP-32S Development Board](https://www.amazon.com/dp/B0718T232Z?cafId=3ecb205d-23d9-4d1b-826c-b3858ca9516d&cafASIN=B0718T232Z&ref_=cm_sw_r_apin_dp_NW1F46B0CCSQEMV6W3X2).
 
-This development board not only connects to wifi, but replaces the need for an Arduino Uno or equivalent additional microcontroller.
+  - This development board not only connects to wifi, but replaces the need for an Arduino Uno or equivalent additional microcontroller.
 
 When flashing code to the board, connect using micro usb and hold the flash button for ~2 seconds.
 ## RS485 Module
@@ -19,7 +19,7 @@ When flashing code to the board, connect using micro usb and hold the flash butt
 
 The RS485 converter used is a [YWBL-WH TTL to RS-485 Converter Module](https://www.amazon.com/dp/B07S1BN6ZK?ref=ppx_pop_mob_ap_share).
 
-This module allows the microcontroller to output RS485 serial communication which is input into the flipdot controllers.
+  - This module allows the microcontroller to output RS485 serial communication which is input into the flipdot controllers.
 
 ## DC-DC Buck Converter
 
@@ -27,9 +27,9 @@ This module allows the microcontroller to output RS485 serial communication whic
 
 The buck converter used is a [MP1584EN DC-DC Buck Converter Adjustable Power Supply Module](https://www.amazon.com/dp/B01MQGMOKI?ref=ppx_pop_mob_ap_share)
 
-This buck converter takes in 24 volts and outputs 5 volts.
+  - This buck converter takes in 24 volts and outputs 5 volts.
 
-Ensure the output is adjusted to a value between 4.8 and 5 volts to ensure no components are damaged.
+  - Ensure the output is adjusted to a value between 4.8 and 5 volts to ensure no components are damaged.
 
 Note: If the converter makes high pitch acoustic noises when plugged in, try using a different 24 volt power supply as the consumption ratio may may not meet the converter requirements.       
 
