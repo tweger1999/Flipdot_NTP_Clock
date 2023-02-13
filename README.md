@@ -72,9 +72,24 @@ Below is an example of the flipdot output for a given byte.
 
 # ESP32
 ## Protocol
-
+![image](https://user-images.githubusercontent.com/87651777/218536490-a3577ba7-e329-4bc0-a474-2a3dd682d4f8.png)
 ## NTP Server
 
+### Time Structure
+A time structure can be created using "struct tm" command. This structure contains the date and time broken down into integer variables.
+Below is a list of commands that can be used with the time structure.
+| tm Command | Type | tm Command | Type |
+| :---: | :---: | :---: | :---: |
+| tm_sec | int | seconds after the minute | 0-59* |
+| tm_min | int | minutes after the hour | 0-59 |
+| tm_hour | int | hours since midnight | 0-23 |
+| tm_mday | int | day of the month | 1-31 |
+| tm_mon | int | months since January | 0-11 |
+| tm_year | int | years since 1900 | NA |
+| tm_wday | int | days since Sunday | 0-6 |
+| tm_yday | int | days since January 1 | 0-365 |
+| tm_isdst | int | Daylight Saving Time flag | NA |
+*Range is generally from 0-59 but can occasionally reach 61 to account for leap years.
 # Code
 ```C++
 /****************************************************************************    
