@@ -63,7 +63,7 @@ Below is an example of the flipdot output for a given byte.
 ## NTP Server
 
 # Code
-```ruby
+```text
 /****************************************************************************    
  *    Project: Flip Dot NTP Clock                                           *
  *    Written by: Tristan Weger                                             *
