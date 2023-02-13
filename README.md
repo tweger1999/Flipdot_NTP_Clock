@@ -7,8 +7,20 @@ Flipdot clock that updates time from an NTP server
 # Hardware
 ## Flipdot Display
 ## Wifi Module
+![image](https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png)
+The wifi module used is a [HiLetgo ESP-WROOM-32 ESP32 ESP-32S Development Board](https://www.amazon.com/dp/B0718T232Z?cafId=3ecb205d-23d9-4d1b-826c-b3858ca9516d&cafASIN=B0718T232Z&ref_=cm_sw_r_apin_dp_NW1F46B0CCSQEMV6W3X2)
+This development board not only connects to wifi, but replaces the need for an Arduino Uno or equivalent additional microcontroller.
+When flashing code to the board, connect using micro usb and hold the flash button for ~2 seconds.
 ## RS485 Module
+![image](https://user-images.githubusercontent.com/87651777/218566819-2eadbbe3-e0d6-4c0f-80a2-8084528d2683.png)
+The RS485 converter used is a [YWBL-WH TTL to RS-485 Converter Module](https://www.amazon.com/dp/B07S1BN6ZK?ref=ppx_pop_mob_ap_share)
+This module allows the microcontroller to output RS485 serial communication which is input into the flipdot controllers.
 ## DC-DC Buck Converter
+![image](https://user-images.githubusercontent.com/87651777/218564557-76189d80-43ad-4fab-b47f-9354d0ce89d9.png)
+The buck converter used is a [MP1584EN DC-DC Buck Converter Adjustable Power Supply Module](https://www.amazon.com/dp/B01MQGMOKI?ref=ppx_pop_mob_ap_share)
+This buck converter takes in 24 volts and outputs 5 volts.
+Ensure the output is adjusted to a value between 4.8 and 5 volts to ensure no components are damaged.
+Note: If the converter makes high pitch acoustic noises when plugged in, try using a different 24 volt power supply as the consumption ratio may may not meet the converter requirements.       
 ## Metal Frame
 ![image](https://user-images.githubusercontent.com/87651777/218560091-4e34d8b3-6e4b-4bc9-a321-cbc9b66b0b0d.png)
 ## Plexiglass Case
@@ -17,8 +29,8 @@ Flipdot clock that updates time from an NTP server
 ![image](https://user-images.githubusercontent.com/87651777/218561437-c5fdc353-f502-46d5-8136-196a4b9fc1a0.png)
 # Software
 Programming was done in Arduino IDE. 
-If using the esp32 module, follow the below directions to add the board to the IDE.
-https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+If using the esp32 module, follow these [directions](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) to add the board to the IDE.
+
 
 When the board is installed, follow the picture below. Ensure the COM port matches where the devboard is plugged into the PC.
 ![image](https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png)
