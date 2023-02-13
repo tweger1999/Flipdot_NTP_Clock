@@ -42,10 +42,24 @@ Note: If the converter makes high pitch acoustic noises when plugged in, try usi
 
 ## Metal Frame
 ![image](https://user-images.githubusercontent.com/87651777/218560091-4e34d8b3-6e4b-4bc9-a321-cbc9b66b0b0d.png)
+
+The flipdot display has standoffs but is mainly held together by a pcb board which is not ideal for the structural integrity of a vertical stand and case.
+To remove some of this stress I constructed a brace from a 13 gauge steel panel. 
+  - The centerline of the plate is bent 90 degreed and -45 degrees on either end, doing this gives the brace strength in all 3 axis.
+  - cutouts were made to to fit onto the board standoffs and allow the pertruding controller board and external circuits to fit.
+  - 8 holes were drilled for the 8 accessible m3 board standoffs.
+
 ## Plexiglass Case
 ![image](https://user-images.githubusercontent.com/87651777/218560548-5049d2b2-caeb-4f3b-9b05-deb55c83737f.png)
 ## 3D Printed Body
 ![image](https://user-images.githubusercontent.com/87651777/218561437-c5fdc353-f502-46d5-8136-196a4b9fc1a0.png)
+
+## M3 Hex Socket Flat Head Cap Screws
+![image](https://user-images.githubusercontent.com/87651777/218581010-e24bd358-c386-4de7-a806-b3798cbd831c.png)
+
+Screws were used to secure the flipdot display to the metal frame and 3D printed body.
+  - 2x  M3 x 25mm
+  - 6x  M3 x 40mm
 # Software
 Programming was done in Arduino IDE. 
 If using the esp32 module, follow these [directions](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) to add the board to the IDE.
