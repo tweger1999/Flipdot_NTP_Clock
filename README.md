@@ -16,7 +16,7 @@ The flipdot display used is a [Alfazeta XY5] (https://flipdots.com/en/products-s
   - Color: black (low) and white (high)
 
 ## Wifi Module
-![image](https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png){:height="36px" width="36px"}.
+![image](https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png).
 
 The wifi module used is a [HiLetgo ESP-WROOM-32 ESP32 ESP-32S Development Board](https://www.amazon.com/dp/B0718T232Z?cafId=3ecb205d-23d9-4d1b-826c-b3858ca9516d&cafASIN=B0718T232Z&ref_=cm_sw_r_apin_dp_NW1F46B0CCSQEMV6W3X2).
   - This development board not only connects to wifi, but replaces the need for an Arduino Uno or equivalent additional microcontroller.
@@ -45,12 +45,21 @@ Note: If the converter makes high pitch acoustic noises when plugged in, try usi
 
 The flipdot display has standoffs but is mainly held together by a pcb board which is not ideal for the structural integrity of a vertical stand and case.
 To remove some of this stress I constructed a brace from a 13 gauge steel panel. 
-  - The centerline of the plate is bent 90 degreed and -45 degrees on either end, doing this gives the brace strength in all 3 axis.
+  - the centerline of the plate is bent 90 degreed and -45 degrees on either end, doing this gives the brace strength in all 3 axis.
   - cutouts were made to to fit onto the board standoffs and allow the pertruding controller board and external circuits to fit.
   - 8 holes were drilled for the 8 accessible m3 board standoffs.
 
 ## Plexiglass Case
 ![image](https://user-images.githubusercontent.com/87651777/218560548-5049d2b2-caeb-4f3b-9b05-deb55c83737f.png)
+
+To make the four corner case:
+  1. start with a sheet of plexiglass.
+  2. cut the height of the plexiglass to the height of the body.
+  3. use wood studs and clamps on either end of the plexiglass at the desired bending locations.
+  4. using a heat gun, apply equal heat to bot sides at the crease near the wood. 
+  5. when plexiglass becomes pliable, use another wood stud to push the plexiglass to an angle of ~90 degrees.
+  6. repeat process on other three corners.
+
 ## 3D Printed Body
 ![image](https://user-images.githubusercontent.com/87651777/218561437-c5fdc353-f502-46d5-8136-196a4b9fc1a0.png)
 
@@ -63,7 +72,6 @@ Screws were used to secure the flipdot display to the metal frame and 3D printed
 # Software
 Programming was done in Arduino IDE. 
 If using the esp32 module, follow these [directions](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) to add the board to the IDE.
-
 
 When the board is installed, follow the picture below. Ensure the COM port matches where the devboard is plugged into the PC.
 
