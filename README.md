@@ -32,7 +32,7 @@ The RS485 converter used is a [YWBL-WH TTL to RS-485 Converter Module](https://w
 
 ## DC-DC Buck Converter
 
-![image](https://user-images.githubusercontent.com/87651777/218564557-76189d80-43ad-4fab-b47f-9354d0ce89d9.png).
+<img src="https://user-images.githubusercontent.com/87651777/218564557-76189d80-43ad-4fab-b47f-9354d0ce89d9.png" width="400" >
 
 The buck converter used is a [MP1584EN DC-DC Buck Converter Adjustable Power Supply Module](https://www.amazon.com/dp/B01MQGMOKI?ref=ppx_pop_mob_ap_share)
 
@@ -43,7 +43,8 @@ The buck converter used is a [MP1584EN DC-DC Buck Converter Adjustable Power Sup
 Note: If the converter makes high pitch acoustic noises when plugged in, try using a different 24 volt power supply as the consumption ratio may may not meet the converter requirements.       
 
 ## Metal Frame
-![image](https://user-images.githubusercontent.com/87651777/218560091-4e34d8b3-6e4b-4bc9-a321-cbc9b66b0b0d.png)
+
+<img src="https://user-images.githubusercontent.com/87651777/218560091-4e34d8b3-6e4b-4bc9-a321-cbc9b66b0b0d.png" width="400" >
 
 The flipdot display has standoffs but is mainly held together by a pcb board which is not ideal for the structural integrity of a vertical stand and case.
 To remove some of this stress I constructed a brace from a 13 gauge steel panel. 
@@ -52,7 +53,8 @@ To remove some of this stress I constructed a brace from a 13 gauge steel panel.
   - 8 holes were drilled for the 8 accessible m3 board standoffs.
 
 ## Plexiglass Case
-![image](https://user-images.githubusercontent.com/87651777/218560548-5049d2b2-caeb-4f3b-9b05-deb55c83737f.png)
+
+<img src="https://user-images.githubusercontent.com/87651777/218560548-5049d2b2-caeb-4f3b-9b05-deb55c83737f.png" width="400" >
 
 To make the four corner case:
   1. start with a sheet of plexiglass.
@@ -63,10 +65,12 @@ To make the four corner case:
   6. repeat process on other three corners.
 
 ## 3D Printed Body
-![image](https://user-images.githubusercontent.com/87651777/218561437-c5fdc353-f502-46d5-8136-196a4b9fc1a0.png)
+
+<img src="https://user-images.githubusercontent.com/87651777/218561437-c5fdc353-f502-46d5-8136-196a4b9fc1a0.png" width="400" >
 
 ## M3 Hex Socket Flat Head Cap Screws
-![image](https://user-images.githubusercontent.com/87651777/218581010-e24bd358-c386-4de7-a806-b3798cbd831c.png)
+
+<img src="https://user-images.githubusercontent.com/87651777/218581010-e24bd358-c386-4de7-a806-b3798cbd831c.png" width="400" >
 
 Screws were used to secure the flipdot display to the metal frame and 3D printed body.
   - 2x  M3 x 25mm
