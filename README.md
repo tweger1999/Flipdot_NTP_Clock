@@ -81,13 +81,13 @@ If using the esp32 module, follow these [directions](https://randomnerdtutorials
 
 When the board is installed, follow the picture below. Ensure the COM port matches where the devboard is plugged into the PC.
 
-<img src="https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png" width="400" >
+<img src="https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png" width="800" >
 
 # RS485
 
 ## Protocol
 
-<img src="https://user-images.githubusercontent.com/87651777/218534167-70db14a3-3a5f-4e87-92d6-594abbc55a8b.png" width="400" >
+<img src="https://user-images.githubusercontent.com/87651777/218534167-70db14a3-3a5f-4e87-92d6-594abbc55a8b.png" width="800" >
 
 ## Data Frame Structure
 
