@@ -24,7 +24,8 @@ The wifi module used is a [HiLetgo ESP-WROOM-32 ESP32 ESP-32S Development Board]
   - When flashing code to the board, connect using micro usb and hold the flash button for ~2 seconds.
 
 ## RS485 Module
-![image](https://user-images.githubusercontent.com/87651777/218566819-2eadbbe3-e0d6-4c0f-80a2-8084528d2683.png).
+
+<img src="https://user-images.githubusercontent.com/87651777/218566819-2eadbbe3-e0d6-4c0f-80a2-8084528d2683.png" width="400" >
 
 The RS485 converter used is a [YWBL-WH TTL to RS-485 Converter Module](https://www.amazon.com/dp/B07S1BN6ZK?ref=ppx_pop_mob_ap_share).
   - This module allows the microcontroller to output RS485 serial communication which is input into the flipdot controllers.
