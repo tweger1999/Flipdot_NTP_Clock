@@ -16,6 +16,15 @@ The flipdot display used is an [Alfazeta XY5](https://flipdots.com/en/products-s
   - Resolution: 14x28
   - Color: black (low) and white (high)
 
+## Custom PCB Board
+
+<img src="https://user-images.githubusercontent.com/87651777/219898870-aa997dec-8b45-470d-a9fe-ea6dda1677ef.png" width="400" >
+
+To make this project look as clean as possible, I designed my own simple PCB board that holds and connects the buck converter, ESP32 module, and RS485 converter.
+
+ - The CAD tool I use is [EasyEDA](https://easyeda.com/page/download) which is simple and user friendly.
+ - When the design is completed, it can be exported and ordered through EasyEDA using [JLCPCB](https://jlcpcb.com/).
+
 ## Wifi Module
 
 <img src="https://user-images.githubusercontent.com/87651777/218563623-ada32246-05d6-4970-9933-78439c05f91e.png" width="400" >
