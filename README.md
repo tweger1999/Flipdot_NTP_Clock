@@ -312,7 +312,69 @@ byte nine[] = {
   B00011000,
   B00000000
   };
-  
+
+byte wifiConnectL[] = {
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00100000,
+  B00100000,
+  B00110001,
+  B00111011,
+  B00011111,
+  B00001111,
+  B00000111,
+  B00000100,
+  B00000110,
+  B00000000,
+  B00111011,
+  B00101010,
+  B00101011,
+  B00101010,
+  B00111010,
+  B00000000,
+  B00100101,
+  B00100101,
+  B00100101,
+  B00100101,
+  B00110101,
+  B00000000
+};
+
+byte wifiConnectR[] = {
+  B00000000,
+  B00000000,
+  B00000000,
+  B00111100,
+  B01011110,
+  B01111110,
+  B01110000,
+  B01111100,
+  B01100000,
+  B01100000,
+  B01111000,
+  B01101000,
+  B01000000,
+  B01000000,
+  B01100000,
+  B00000000,
+  B01011100,
+  B00010000,
+  B00011000,
+  B00010000,
+  B00010000,
+  B00000000,
+  B00010110,
+  B01010100,
+  B00110110,
+  B00010100,
+  B00010110,
+  B00000000
+};
+
 void displayNumber(int n) {
     switch(n){
         case 0:
@@ -322,7 +384,7 @@ void displayNumber(int n) {
             Serial.write(one, 9);
             break;
         case 2:
-            Serial.write(two, 9);
+           Serial.write(two, 9);
             break;
         case 3:
             Serial.write(three, 9);
@@ -358,6 +420,12 @@ void setup(){
   Serial.println();
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
+      Serial.write(HCA1, 3);
+      Serial.write(wifiConnectL, 28);
+      Serial.write(HCA2, 3);
+      Serial.write(wifiConnectR, 28);
+      Serial.write(ender, 1);
+      delay(1000);
     //Waiting to connect to wifi, display symbol on flipdot as wanted
   }
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
