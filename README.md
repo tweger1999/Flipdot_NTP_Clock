@@ -10,7 +10,7 @@ Detailed information about the design and construction of a flipdot display cloc
 
 ![image](https://user-images.githubusercontent.com/87651777/218577527-7af86908-68bc-4888-8c2e-aeca37555281.png)
 
-The flipdot display used is a [Alfazeta XY5](https://flipdots.com/en/products-services/flip-dot-boards-xy5/).
+The flipdot display used is an [Alfazeta XY5](https://flipdots.com/en/products-services/flip-dot-boards-xy5/).
   - Pixel size: 13.5mm (0.53")
   - Supply voltage: 24 volts
   - Resolution: 14x28
