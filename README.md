@@ -81,13 +81,13 @@ If using the esp32 module, follow these [directions](https://randomnerdtutorials
 
 When the board is installed, follow the picture below. Ensure the COM port matches where the devboard is plugged into the PC.
 
-![image](https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png)
+<img src="https://user-images.githubusercontent.com/87651777/218406428-b49b7a27-2f60-4636-9c9e-04c6ea0685ea.png" width="400" >
 
 # RS485
 
 ## Protocol
 
-![image](https://user-images.githubusercontent.com/87651777/218534167-70db14a3-3a5f-4e87-92d6-594abbc55a8b.png)
+<img src="https://user-images.githubusercontent.com/87651777/218534167-70db14a3-3a5f-4e87-92d6-594abbc55a8b.png" width="400" >
 
 ## Data Frame Structure
 
@@ -147,7 +147,7 @@ Below is an example of the flipdot output for a given byte.
 
 ## Protocol
 
-![image](https://user-images.githubusercontent.com/87651777/218536490-a3577ba7-e329-4bc0-a474-2a3dd682d4f8.png)
+<img src="https://user-images.githubusercontent.com/87651777/218536490-a3577ba7-e329-4bc0-a474-2a3dd682d4f8.png" width="400" >
 
 ## NTP Server
 
