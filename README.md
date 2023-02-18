@@ -1,5 +1,6 @@
 # Flipdot_NTP_Clock
-Flipdot clock that updates time from an NTP server
+
+Detailed information about the design and construction of a flipdot display clock that retrieves time from a NTP (Network Time Protocol) server using an ESP32 wifi module.
 
 # Overview
 
