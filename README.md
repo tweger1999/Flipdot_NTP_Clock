@@ -148,6 +148,19 @@ Below is an example of the flipdot output for a given byte.
 NTP stands for Network Time Protocol. The main purpose of NTP is to synchronize computer clock times through the network. The ESP32 wifi module is used to connect to a local network and request/receive time from the NTP.
 There are many different NTP clients that can be used, pool.ntp.org was used in this project due to it being free and reliable with ~4600 activer servers globally.
 
+### Time Zone Offset
+
+| Time Zone | Name | Hour Offset | gmtOffset_sec |
+| :---: | :---: | :---: | :---: |
+| HST | Hawaii Standard Time | -10 | -36000 |
+| AKST | Alaska Standard Time | -9 | -32400 |
+| PST | Pacific Standard Time | -8 | -28800 |
+| MST | Mountain Standard Time | -7 | -25200 |
+| CST | Central Standard Time | -6 | -21600 |
+| EST | Eastern Standard Time | -5 | -18000 |
+
+### Daylight Savings Offset
+
 ### Time Structure
 
 A time structure can be created using "struct tm" command. This structure contains the date and time broken down into integer variables.
