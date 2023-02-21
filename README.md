@@ -18,9 +18,7 @@ The flipdot display used is an [Alfazeta XY5](https://flipdots.com/en/products-s
 
 ## Custom PCB Board
 
-![image](https://user-images.githubusercontent.com/87651777/220259326-82cc2ce0-5075-4b1f-8e85-b7b3c9a4a7f4.png)
-
-<img src="https://user-images.githubusercontent.com/87651777/219898870-aa997dec-8b45-470d-a9fe-ea6dda1677ef.png" width="400" >
+![image](https://user-images.githubusercontent.com/87651777/220259515-8f3de61d-bfc3-410b-9960-2ef8bc0c1f5f.png)
 
 To make this project look as clean as possible, I designed my own simple PCB board that holds and connects the buck converter, ESP32 module, and RS485 converter.
 
