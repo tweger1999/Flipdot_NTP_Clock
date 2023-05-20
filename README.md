@@ -201,7 +201,7 @@ Below is a list of commands that can be used with the time structure.
 /****************************************************************************    
  *    Project: Flip Dot NTP Clock                                           *
  *    Written by: Tristan Weger                                             *
- *    Date: 02/11/2023                                                      *
+ *    Date: 05/20/2023                                                      *
  *    Description: The following code uses an ESP32 wifi module             *
  *      to connect to a NTP server to obtain local time and update          *
  *      a clock made from a 14x28 pixel Alfazeta XY5 flip dot display.      *   
@@ -221,6 +221,9 @@ const char* password = "Wifi Password Here";
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = -18000;
 const int   daylightOffset_sec = 3600;
+
+//Set variable for storing previous time
+unsigned long previousMillis = 0;
 
 //Head and end are format in hex as a standard
 byte HCA1[] = {0x80, 0x85, 0x01};
@@ -459,13 +462,16 @@ void setup(){
   }
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   flipDotDisplayTime();
-  WiFi.disconnect(true);
-  WiFi.mode(WIFI_OFF);
 }
 
 void loop(){
-  flipDotDisplayTime();
-  delay(1000);
+  unsigned long currentMillis = millis();
+
+  // If 1 second has elapsed, update the display
+  if (currentMillis - previousMillis >= 1000) {
+    previousMillis = currentMillis;
+    flipDotDisplayTime();
+  }
 }
 
 void flipDotDisplayTime(){
